@@ -1,0 +1,84 @@
+#header > #headersecound > #label
+{
+	display: none;
+}
+#innercontainer
+{
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	overflow-x: scroll;
+}
+#innercontainer > select
+{
+	width: 15%;
+	height: 8%;
+	position: absolute;
+	top: 0;
+	left: 2.5%;
+	background-color: transparent;
+	outline: none;
+	border:none;
+	font-size: 25px;
+}
+#innercontainer > table
+{
+	position: absolute;
+	width: 95%;
+	height: auto;
+	top: 10%;
+	left: 2.5%;
+	border-collapse: collapse;
+	text-align: center;
+}
+#innercontainer > table > thead > tr > th
+{
+	padding: 4px;
+}
+#innercontainer > table > tbody > tr > td
+{
+	padding: 2px;
+}
+#innercontainer > table > thead > tr,#innercontainer > table > tbody > tr
+{
+	border:1px solid black;
+	border-left: none;
+	border-right: none; 
+	height: 31px;
+	cursor: pointer;
+}
+#innercontainer > table > tbody > tr:hover
+{
+	background-color: #e4e4e4;
+	font-weight: 550;
+}
+#innercontainer > table > tbody > tr >td > a
+{
+	text-decoration: none;
+}
+#innercontainer > table > tbody > tr >td > a >i
+{
+	color: #0097e6;
+}
+#innercontainer > table > tbody > tr >td >a >i:hover
+{
+	color: #000;
+}
+#employeetable
+{
+	visibility:	visible;
+}
+#projecttable
+{
+	visibility: hidden;
+}
+@media (max-width:400px)
+{
+	#innercontainer > select
+	{
+		width: 33%;
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,230 @@
+#header > #headersecound > #label
+{
+	display: none;
+}
+#outerbox
+{
+	width: 30%;
+	height: 50%;
+	position: absolute;
+	top: 20%;
+	left: 2%;
+	border-radius: 25px 25px 25px 25px;
+	border: 1px solid #d0d0d0;
+}
+#outerbox > #inner1
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 15%;
+	border-radius: 25px 25px 0px 0px;
+	background-color: #0097e6;
+	border-bottom: 1px solid #e4e4e4;
+	color: #f5f6fa;
+}
+#outerbox > #inner1 > h2
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#outerbox > #inner2
+{
+	position: absolute;
+	top: 15%;
+	left: 0;
+	width: 100%;
+	height: 85%;
+	border-radius: 0px 0px 25px 25px;
+}
+#outerbox > #inner2 > form
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #747d8c;
+}
+#outerbox > #inner2 > form > #profilesection
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 36%;
+	border-bottom: 1px solid #e4e4e4;
+}
+#outerbox > #inner2 > form > #profilesection > table
+{
+	position: absolute;
+	width: 88%;
+	top: 4%;
+	left: 10%;
+	font-size: 14px;
+}
+#outerbox > #inner2 > form > #profilesection > table > tbody > tr
+{
+	height: 70px;
+	letter-spacing: 1px;
+}
+#outerbox > #inner2 > form > #profilesection > table > tbody > tr > td > select
+{
+	width: 88%;
+	top: 5px;
+	position: relative;
+	background-color: transparent;
+	outline: none;
+	font-size: 18px;
+	cursor: pointer;
+}
+#outerbox > #inner2 > form > #profilesection > table > tbody > tr > td > #error
+{
+	top: 9px;
+	position: relative;
+	color: red;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+#outerbox > #inner2 > form > #profilesection > table > tbody > tr > td > #error > p
+{
+	width: 50%;
+    font-weight: bold;
+}
+#outerbox > #inner2 > form > #descriptionsection
+{
+	position: absolute;
+	top: 40%;
+	left: 0;
+	width: 100%;
+	height: 60%;
+}
+#outerbox > #inner2 > form > #descriptionsection > table
+{
+	position: absolute;
+	width: 88%;
+	left: 10%;
+	font-size: 14px;
+}
+#outerbox > #inner2 > form > #descriptionsection > table > tbody > tr
+{
+	height: 70px;
+	letter-spacing: 1px;
+}
+#outerbox > #inner2 > form > #descriptionsection > table > tbody > tr > td > textarea
+{
+	top: 5px;
+	position: relative;
+	background-color: transparent;
+	outline: none;
+	margin-bottom: 6px;
+	width: 88%;
+	font-weight: bold;
+}
+#outerbox > #inner2 > form > #descriptionsection > table > tbody > tr > td > #error
+{
+	color: red;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+#outerbox > #inner2 > form > #descriptionsection > table > tbody > tr > td > #error > p
+{
+	width: 75%;
+    font-weight: bold;
+}
+#outerbox > #inner2 > form > #descriptionsection > #submitbutton
+{
+	width: 45%;
+	height: 20%;
+	position: absolute;
+	top: 74%;
+	right: 8%;
+	display: inline;
+}
+#outerbox > #inner2 > form > #descriptionsection > #submitbutton > input
+{
+	width: 42%;
+	margin-right: 10px;
+	display: inline;
+	height: 100%;
+	background-color: #0097e6;
+	border: 1px solid #e4e4e4;
+	border-radius: 20px 20px 20px 20px;
+	outline: none;
+	cursor: pointer;
+	border: 1.5px solid #0097e6;
+	background-color: #fff;
+	color: #0097e6;
+	font-weight: bolder;
+}
+#outerbox > #inner2 > form > #descriptionsection > #submitbutton > input:hover
+{
+	background-color: #0097e6;
+	color: #f5f6fa;
+	transition: .3s;
+}
+#outertable
+{
+	width: 60%;
+	height: 70%;
+	position: absolute;
+	top: 18%;
+	left: 37%;	
+	//overflow-y: scroll;
+}
+#outertable > table
+{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 4%;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 15px;
+}
+#outertable > table > thead > tr > th
+{
+	padding: 9px;
+}
+#outertable > table > thead > tr,#outertable > table > tbody > tr
+{
+	border:1px solid black;
+	border-left: none;
+	border-right: none; 
+	height: 31px;
+	cursor: pointer;
+}
+#outertable > table > tbody > tr:hover
+{
+	background-color: #e4e4e4;
+}
+#outertable > table > tbody > tr >td > a
+{
+	text-decoration: none;
+}
+#outertable > table > tbody > tr >td > a >i
+{
+	color: #0097e6;
+}
+#outertable > table > tbody > tr >td >a >i:hover
+{
+	color: #000;
+}
+@media (max-width:400px)
+{
+	#outerbox
+	{
+		width: 96%;
+		height: 60%;
+	}
+	#outertable
+	{
+		width: 96%;
+		left: 2%;
+		top: 80%;
+		overflow-y: scroll;
+	}
+}
