@@ -4,7 +4,7 @@ Hello,</br><b>Introduction :-</b>ERP is a business process management software t
 
 <h3 align="center"> <b>Which technology is used …???</b> </h3>  
 
--	PHP(CodeIgnitor Framework)
+-	PHP(CodeIgniter Framework)
 -	MySql
 -	HTML5
 -	CSS3
@@ -19,7 +19,7 @@ Hello,</br><b>Introduction :-</b>ERP is a business process management software t
 
 -	Xampp Server  
 https://www.apachefriends.org/download.html
-- CodeIgnitor FrameWork  
+- CodeIgniter FrameWork  
 https://api.github.com/repos/bcit-ci/CodeIgniter/zipball/3.1.11
 	
 
@@ -40,7 +40,14 @@ https://api.github.com/repos/bcit-ci/CodeIgniter/zipball/3.1.11
 - Open Browser > Search localhost/ERP/
 
 Note:- jQuery,GoogleFont CDN used in project so that Internet is required.
-                                                           
+
+<h3 align="center"> <b>Where is the Admin Details ...???</b> </h3>
+
+<b>Admin Email Id:- admin@gmail.com</b>  
+<b>Admin Password:- 1234567890</b>  
+
+<b>Note:-</b> Password is User Contactnumber.
+
 <h3 align="center"> <b>Where is the ScreenRecord of the project...???</b> </h3>  
 <b>Path :-</b>ScreenRecord/
 
@@ -51,6 +58,8 @@ Note:- jQuery,GoogleFont CDN used in project so that Internet is required.
 ![picture alt](/SnapShot/AddEmployee.png "Add Employee")
 ![picture alt](/SnapShot/ViewProjectHistroy.png "View Project Histroy")
 ![picture alt](/SnapShot/EmployeeDashboard.png "Employee Dashboard")
+![picture alt](/SnapShot/AddTransaction.png "Add Transaction")
+![picture alt](/SnapShot/ViewBalanceSheet.png "View Transaction")
 
 <h3 align="center"> <b>Copyright & Powered By</b> </h3>
 <p align="right"><b>Smit Shah</br>smitshah22050602@gmail.com</br>8849364239</br></b></p>
