@@ -82,20 +82,36 @@ class route extends CI_Controller {
 			redirect('route/index');		
 		}
 	}
-	public function viewemployeehistroy()
+	public function viewbalance()
 	{
 		$session_array = $this->session->userdata();
 		if(isset($session_array['id']))
 		{
-			$this->load->view('viewemployeehistroy');
+			$this->load->model('admin_model');
+			$debit_result=$this->admin_model->transaction_histroy(2);
+			$debit_total=$this->admin_model->transaction_sum(2);
+			$credit_result=$this->admin_model->transaction_histroy(1);
+			$credit_total=$this->admin_model->transaction_sum(1);
+           	$this->load->view('viewbalance',['debit_array'=> $debit_result->result_array(),'debit_total'=> $debit_total->result_array(),'credit_array'=> $credit_result->result_array(),'credit_total'=> $credit_total->result_array()]);
 		}
 		else
 		{
 			redirect('route/index');		
 		}
 	}
-	public function header()
+	public function addtransaction()
 	{
-		$this->load->view('header');
+		$session_array = $this->session->userdata();
+		if(isset($session_array['id']))
+		{
+			$this->load->model('admin_model');
+			$transaction_result=$this->admin_model->transaction_histroy();
+			$transaction_total=$this->admin_model->transaction_sum();
+			$this->load->view('addtransaction',['transaction_result'=> $transaction_result->result_array(),'transaction_total'=> $transaction_total->result_array(),'message' => $this->session->flashdata('message')]);
+		}
+		else
+		{
+			redirect('route/index');		
+		}
 	}
 }

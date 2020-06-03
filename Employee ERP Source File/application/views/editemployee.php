@@ -84,8 +84,8 @@
 								<span id="error"><?php echo form_error('position'); ?></span>
 							</td>
 							<td>
-								<label><b>Income</b></label>
-								<?php echo form_input($incomefielddata);?><br>
+								<label><b>Income Per Month</b></label><br>
+								<i class="fa fa-rupee fa-1x" aria-hidden="true"></i><?php echo form_input($incomefielddata);?><br>
 								<span id="error"><?php echo form_error('income'); ?></span>
 							</td>
 						</tr>

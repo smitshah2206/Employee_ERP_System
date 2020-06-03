@@ -150,4 +150,8 @@
 	{
 		font-size: 10px;
 	}
+	#footer
+	{
+		top: 175%;
+	}
 }

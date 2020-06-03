@@ -269,4 +269,29 @@ class admin extends CI_Controller {
                         }
                 }         
         }
+    public function addtransaction()
+    {
+        $data=$this->input->post();
+        if ($this->form_validation->run('addtransaction') == FALSE)
+        {
+            $this->load->model('admin_model');
+            $transaction_result=$this->admin_model->transaction_histroy();
+            $transaction_total=$this->admin_model->transaction_sum();
+            $this->load->view('addtransaction',['transaction_result'=> $transaction_result->result_array(),'transaction_total'=> $transaction_total->result_array()]);
+        }
+        else
+        {
+            $this->load->model('admin_model');
+            $result=$this->admin_model->add_transaction($data);
+            if ($result) 
+            {
+                $this->session->set_flashdata('message', 'Transaction Added Sucessfully');
+                redirect('route/addtransaction');
+            }
+            else
+            {
+                redirect('route/dashboard');    
+            }
+        }
+    }
 }

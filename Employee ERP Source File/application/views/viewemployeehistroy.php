@@ -60,7 +60,7 @@
 								<label><b>Income</b></label>
 							</td>
 							<td>
-								<label><b><?php echo $employee_details[0]['income'];?></b></label>
+								<label><b><?php echo $employee_details[0]['income'];?> <i class="fa fa-rupee fa-1x" aria-hidden="true"></i></b></label>
 							</td>
 						</tr>
 						<tr>

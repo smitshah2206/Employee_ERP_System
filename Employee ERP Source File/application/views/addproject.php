@@ -11,17 +11,23 @@
 			        'autocomplete'	=> 'off',
 			        'value'			=> set_value('last_name'),
 				);
-	$projectnamefielddata = array(
-			        'type'			=> 'text',
-			        'name'          => 'project_name',
+	$projectamountfielddata = array(
+			        'type'			=> 'number',
+			        'name'          => 'project_amount',
 			        'autocomplete'	=> 'off',
-			        'value'			=> set_value('project_name'),
+			        'value'			=> set_value('project_amount'),
 				);
 	$deadlinefielddata = array(
 			        'type'			=> 'date',
 			        'name'          => 'deadline',
 			        'autocomplete'	=> 'off',
 			        'value'			=> set_value('deadline'),
+				);
+	$projectnamefielddata = array(
+			        'type'			=> 'text',
+			        'name'          => 'project_name',
+			        'autocomplete'	=> 'off',
+			        'value'			=> set_value('project_name'),
 				);
 	$contactnumberfielddata = array(
 			        'type'			=> 'number',
@@ -87,14 +93,21 @@
 						</tr>
 						<tr>
 							<td>
-								<label><b>Project Name</b></label>
-								<?php echo form_input($projectnamefielddata);?><br>
-								<span id="error"><?php echo form_error('project_name'); ?></span>
+								<label><b>Project Cost</b></label><br>
+								<i class="fa fa-rupee fa-1x" aria-hidden="true"></i><?php echo form_input($projectamountfielddata);?><br>
+								<span id="error"><?php echo form_error('project_amount'); ?></span>
 							</td>
 							<td>
 								<label><b>Deadline</b></label>
 								<?php echo form_input($deadlinefielddata);?><br>
 								<span id="error"><?php echo form_error('deadline'); ?></span>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<label><b>Project Name</b></label>
+								<?php echo form_input($projectnamefielddata);?><br>
+								<span id="error"><?php echo form_error('project_name'); ?></span>
 							</td>
 						</tr>
 					</table>
@@ -119,7 +132,7 @@
 					<table>
 						<tr>
 							<td>
-								<label><b>Description</b></label>
+								<label><b>Project Description</b></label>
 								<?php echo form_input($descriptionfielddata);?><br>
 								<span id="error"><?php echo form_error('description'); ?></span>
 							</td>

@@ -6,7 +6,7 @@
 }
 body
 {
-	background-color: #fffff4;
+	background-color: #ffffff;
 }
 #outer
 {
@@ -154,7 +154,7 @@ body
 }
 #header > #headersecound > #addbutton
 {
-	width: 30%;
+	width: 40%;
 	height: 70%;
 	position: absolute;
 	top: 15%;
@@ -164,13 +164,13 @@ body
 #header > #headersecound > #addbutton > button
 {
 	display: inline-block;
-	width: 35%;
+	width: 27%;
 	left: 0;
 	height: 70%;
 	outline: none;
 	border: 1.5px solid #0097e6;
 	background-color: #fff;
-	margin-right: 10%;
+	margin-right: 5%;
 	border-radius: 20px 20px 20px 20px;
 	cursor: pointer;
 }
@@ -219,15 +219,19 @@ body
 		left: 60%;
 		width: 100%;
 	}
+	#header > #headersecound > #label
+	{
+		left: 1%;
+	}
 	#header > #headersecound > #addbutton
 	{
-		width: 50%;
+		width: 72%;
 		height: 66%;
 		right: 0%;
 	}
 	#header > #headersecound > #addbutton > button
 	{
-		width: 48%;
+		width: 32%;
 		margin-right: 0%;
 	}
 	#header > #headersecound > #addbutton > button > a

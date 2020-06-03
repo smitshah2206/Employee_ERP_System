@@ -60,6 +60,7 @@
 							if($session_array['role']=='Admin')
 							{
 							?>
+								<button><a href="<?php echo base_url('route/viewbalance/'); ?>">Balance Sheet</a></button>
 								<button><a href="<?php echo base_url('route/addemployee/'); ?>">Add Employee</a></button>
 								<button><a href="<?php echo base_url('route/addproject/'); ?>">Add Project</a></button>
 							<?php

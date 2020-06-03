@@ -227,4 +227,8 @@
 		top: 80%;
 		overflow-y: scroll;
 	}
+	#footer
+	{
+		top: 150%;
+	}
 }

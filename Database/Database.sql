@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2020 at 06:28 PM
+-- Generation Time: Jun 03, 2020 at 07:14 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 5.6.39
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `test`
+-- Database: `oriol_infotech`
 --
 
 -- --------------------------------------------------------
@@ -55,7 +55,7 @@ CREATE TABLE `employee_details` (
 --
 
 INSERT INTO `employee_details` (`id`, `role`, `employee_id`, `first_name`, `last_name`, `position`, `income`, `password`, `contact_number`, `contact_email`, `description`, `location`, `date_of_joining`, `last_project_id`, `last_project_name`, `last_work_time`, `status`, `created_time`, `created_by`) VALUES
-(1, 'Admin', 'EMP001', 'Smit', 'Shah', 'Founder', '40000', 'e807f1fcf82d132f9bb018ca6738a19f', '1234567890', 'admin@gmail.com', '', 'Ahmedabad', '2020-05-31 18:36:20.912456', '---', '---', '---', 0, '2020-06-02 16:27:57.418417', 'EMP001');
+(1, 'Admin', 'EMP001', 'Smit', 'Shah', 'Founder', '40000', 'e807f1fcf82d132f9bb018ca6738a19f', '1234567890', 'admin@gmail.com', 'Founder& CEO', 'Ahmedabad', '2020-05-31 18:36:20.912456', '---', '---', '---', 0, '2020-06-02 12:35:04.314333', 'EMP001');
 
 -- --------------------------------------------------------
 
@@ -69,6 +69,7 @@ CREATE TABLE `project_details` (
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
   `project_name` varchar(255) NOT NULL,
+  `project_amount` varchar(255) NOT NULL,
   `deadline` varchar(255) NOT NULL,
   `contact_number` varchar(255) NOT NULL,
   `contact_email` varchar(255) NOT NULL,
@@ -81,6 +82,31 @@ CREATE TABLE `project_details` (
   `created_time` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
   `created_by` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `transaction_histroy`
+--
+
+CREATE TABLE `transaction_histroy` (
+  `id` int(255) NOT NULL,
+  `transaction_id` varchar(255) NOT NULL,
+  `transaction_amount` varchar(255) NOT NULL,
+  `transaction_date` varchar(255) NOT NULL,
+  `transaction_description` varchar(255) NOT NULL,
+  `user_id` varchar(255) NOT NULL,
+  `credit_debit_status` int(1) NOT NULL,
+  `status` int(1) NOT NULL,
+  `created_time` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `transaction_histroy`
+--
+
+INSERT INTO `transaction_histroy` (`id`, `transaction_id`, `transaction_amount`, `transaction_date`, `transaction_description`, `user_id`, `credit_debit_status`, `status`, `created_time`) VALUES
+(1, 'TRP001', '40000', '', 'Admin Salary', 'EMP001', 2, 0, '2020-06-02 12:35:04.314333');
 
 -- --------------------------------------------------------
 
@@ -113,6 +139,12 @@ ALTER TABLE `project_details`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `transaction_histroy`
+--
+ALTER TABLE `transaction_histroy`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `update_work`
 --
 ALTER TABLE `update_work`
@@ -126,19 +158,25 @@ ALTER TABLE `update_work`
 -- AUTO_INCREMENT for table `employee_details`
 --
 ALTER TABLE `employee_details`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `project_details`
 --
 ALTER TABLE `project_details`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `transaction_histroy`
+--
+ALTER TABLE `transaction_histroy`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `update_work`
 --
 ALTER TABLE `update_work`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

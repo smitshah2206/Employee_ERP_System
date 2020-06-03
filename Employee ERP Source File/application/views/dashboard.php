@@ -26,6 +26,7 @@
 						<th>Sr No.</th>
 						<th>Role</th>
 						<th>Position</th>
+						<th>Employee Id</th>
 						<th>Full Name</th>
 						<th>Contact Number</th>
 						<th>Contact Email</th>
@@ -55,6 +56,7 @@
 								<td><?php echo $a++;?></td>
 								<td><?php echo $row['role'];?></td>
 								<td><?php echo $row['position'];?></td>
+								<td><?php echo $row['employee_id'];?></td>
 								<td><?php echo $row['first_name'].' '.$row['last_name'];?></td>
 								<td><?php echo $row['contact_number'];?></td>
 								<td><?php echo $row['contact_email'];?></td>
@@ -91,6 +93,7 @@
 					<tr>
 						<th>Sr No.</th>
 						<th>Deadline</th>
+						<th>Project Id</th>
 						<th>Full Name</th>
 						<th>Customer Number</th>
 						<th>Customer Email</th>
@@ -118,6 +121,7 @@
 							<tr>
 								<td><?php echo $a++;?></td>
 								<td><?php echo $deadline_date;?></td>
+								<td><?php echo $row['project_id'];?></td>
 								<td><?php echo $row['first_name'].' '.$row['last_name'];?></td>
 								<td><?php echo $row['contact_number'];?></td>
 								<td><?php echo $row['contact_email'];?></td>

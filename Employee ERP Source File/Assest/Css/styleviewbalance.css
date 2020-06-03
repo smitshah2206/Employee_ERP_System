@@ -1,0 +1,134 @@
+#credittable
+{
+	width: 40%;
+	height: 70%;
+	position: absolute;
+	top: 20%;
+	left: 5%;	
+	//overflow-y: scroll;
+}
+#credittable > h2
+{
+	position: absolute;
+}
+#credittable > table , #debittable > table
+{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 7%;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 15px;
+}
+#credittable > table > thead > tr > th,#debittable > table > thead > tr > th
+{
+	padding: 9px;
+}
+#credittable > table > thead > tr,#credittable > table > tbody > tr,#debittable > table > thead > tr,#debittable > table > tbody > tr
+{
+	border:1px solid black;
+	border-left: none;
+	border-right: none; 
+	height: 31px;
+	cursor: pointer;
+}
+#credittable > table > tbody > tr:hover,#debittable > table > tbody > tr:hover
+{
+	background-color: #e4e4e4;
+}
+#credittable > table > tbody > tr >td > a,#debittable > table > tbody > tr >td > a
+{
+	text-decoration: none;
+}
+#credittable > table > tbody > tr >td > a >i,#debittable > table > tbody > tr >td > a >i
+{
+	color: #0097e6;
+}
+#credittable > table > tbody > tr >td >a >i:hover,#debittable > table > tbody > tr >td >a >i:hover
+{
+	color: #000;
+}
+#transactionbutton
+{
+	width: 9%;
+	height: 5%;
+	position: absolute;
+	top: 27%;
+	left: 45%;
+}
+#transactionbutton > button
+{
+	width: 100%;
+	right: 0%;
+	position: absolute;
+	outline: none;
+	border: 1.5px solid #0097e6;
+	background-color: #fff;
+	border-radius: 20px 20px 20px 20px;
+	cursor: pointer;
+	height: 100%	;
+}
+#transactionbutton > button:hover
+{
+	background-color: #0097e6;
+	transition: .3s;
+}
+#transactionbutton > button > a
+{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	font-weight: bolder;
+	color: #0097e6;
+}
+#transactionbutton > button:hover a
+{
+	color: #f5f6fa;
+	transition: .3s;
+}
+#debittable
+{
+	width: 40%;
+	height: 70%;
+	position: absolute;
+	top: 20%;
+	right: 5%;	
+	//overflow-y: scroll;
+}
+#debittable > h2
+{
+	position: absolute;
+	right: 0%;
+}
+@media (max-width:400px)
+{
+	#credittable
+	{
+		width: 96%;
+		left: 2%;
+		top: 20%;
+		overflow-y: scroll;
+	}
+	#credittable > table, #debittable > table
+	{
+		top: 10%;
+	}
+	#transactionbutton
+	{
+		top: 95%;
+		width: 30%;
+		left: 35%;
+	}
+	#debittable
+	{
+		width: 96%;
+		left: 2%;
+		top: 105%;
+		overflow-y: scroll;
+	}
+	#footer
+	{
+		top: 175%;
+	}
+}

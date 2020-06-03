@@ -63,13 +63,18 @@
 									'rules'	=>	'required|alpha'
 								],
 								[
-									'field'	=>	'project_name',
-									'label'	=>	'Project Name',
-									'rules'	=>	'required'
+									'field'	=>	'project_amount',
+									'label'	=>	'Project Amount',
+									'rules'	=>	'required|numeric'
 								],
 								[
 									'field'	=>	'deadline',
 									'label'	=>	'Deadline',
+									'rules'	=>	'required'
+								],
+								[
+									'field'	=>	'project_name',
+									'label'	=>	'Project Name',
 									'rules'	=>	'required'
 								],
 								[
@@ -97,6 +102,18 @@
 								[
 									'field'	=>	'description',
 									'label'	=>	'Description',
+									'rules'	=>	'required|max_length[200]'
+								],
+							],
+			'addtransaction' => [
+								[
+									'field'	=>	'transaction_amount',
+									'label'	=>	'Transaction Amount',
+									'rules'	=>	'required|numeric'
+								],
+								[
+									'field'	=>	'transaction_description',
+									'label'	=>	'Transaction Description',
 									'rules'	=>	'required|max_length[200]'
 								],
 							],					

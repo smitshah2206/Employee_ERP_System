@@ -49,6 +49,22 @@
 						</tr>
 						<tr>
 							<td>
+								<label><b>Project Amount</b></label>
+							</td>
+							<td>
+								<label><b><?php echo $project_details[0]['project_amount'];?> <i class="fa fa-rupee fa-1x" aria-hidden="true"></i></b></label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label><b>Project Description</b></label>
+							</td>
+							<td>
+								<label><b><?php echo $project_details[0]['description'];?></b></label>
+							</td>
+						</tr>
+						<tr>
+							<td>
 								<label><b>Created Date</b></label>
 							</td>
 							<td>
@@ -93,14 +109,6 @@
 							</td>
 							<td>
 								<label><b><?php echo $project_details[0]['last_employee_id'];?></b></label>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label><b>Description</b></label>
-							</td>
-							<td>
-								<label><b><?php echo $project_details[0]['description'];?></b></label>
 							</td>
 						</tr>
 					</table>
