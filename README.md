@@ -29,6 +29,9 @@ https://api.github.com/repos/bcit-ci/CodeIgniter/zipball/3.1.11
 - Paste ERPFolder in C://>XAMPP/WAMPP>htdocs/www   
 - Goto htdocs/www>ERP> Paste Assest,application & .htaccess(Employee ERP Source File > Assest,application & .htaccess)
 
+
+<b>Note:-</b> Rename htaccess is .htaccess.
+
 <h3 align="center"> <b>How to Import the Database File ...??</b> </h3>  
 
 - Open Browser > Search localhost/phpmyadmin >Click Create New Database > Database Name = ERP_System  
