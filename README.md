@@ -54,7 +54,7 @@ Note:- jQuery,GoogleFont CDN used in project so that Internet is required.
 <h3 align="center"> <b>Where is the ScreenRecord of the project...???</b> </h3>  
 <b>Path :-</b>ScreenRecord/
 
-<h3 align="center"> <b>SnapShot of the page…!!!</b> </h3>  
+<h3 align="center"> <b>SnapShot of the project…!!!</b> </h3>  
 
 ![picture alt](/SnapShot/Index.png "Home Page")  
 ![picture alt](/SnapShot/AdminDashboard.png "Admin Dashboard")  
