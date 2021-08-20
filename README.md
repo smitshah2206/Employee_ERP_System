@@ -30,12 +30,12 @@ https://api.github.com/repos/bcit-ci/CodeIgniter/zipball/3.1.11
 - Goto htdocs/www>ERP> Paste Assest,application & .htaccess(Employee ERP Source File > Assest,application & .htaccess)
 
 
-<b>Note:-</b> Rename htaccess is .htaccess.
+<b>Note:-</b> Rename htaccess to .htaccess.
 
 <h3 align="center"> <b>How to Import the Database File ...??</b> </h3>  
 
 - Open Browser > Search localhost/phpmyadmin >Click Create New Database > Database Name = ERP_System  
-- Open Browser > Search localhost/phpmyadmin > Click Import Button > Click ChooseFile Button > Go to Project Folder > Database >b24u.sql > Click Open Button
+- Open Browser > Search localhost/phpmyadmin > Click Import Button > Click ChooseFile Button > Go to Project Folder > Database >Database.sql > Click Open Button
 
 <h3 align="center"> <b>How to run the Project …???</b> </h3>  
 
